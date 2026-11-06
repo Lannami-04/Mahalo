@@ -40,6 +40,7 @@ h1{font-family:var(--body);font-weight:700;font-size:.85rem;line-height:1.3;marg
 .ta{display:flex;flex-direction:column;align-items:center;gap:10px;text-decoration:none;color:var(--fg)}
 .ta .dot{width:150px;height:150px;border-radius:50%;background:var(--ta);display:grid;place-items:center;color:var(--ta-ink);font-weight:700;font-size:1.3rem;letter-spacing:.02em;transition:transform .15s}
 .ta:hover .dot{transform:scale(1.05)}
+.ta .dot img{width:100%;height:100%;object-fit:cover;border-radius:50%}
 .ta .name{font-weight:700;font-size:2.8rem;letter-spacing:-.01em;line-height:1}
 .note{font-size:.85rem;color:var(--hibiscus);margin:0}
 @media (prefers-reduced-motion:reduce){.ta .dot{transition:none}}
@@ -62,7 +63,7 @@ h1{font-family:var(--body);font-weight:700;font-size:.85rem;line-height:1.3;marg
   <section class="review">
     <h2>Please <b>click</b> the logo to leave a review.</h2>
     <a class="ta" id="review-link" href="#" target="_blank" rel="noopener">
-      <span class="dot">Review</span>
+      <span class="dot"><img src ="logo.png" alt="Leave a review"></span>
       <span class="name">Tripadvisor</span>
     </a>
     <p class="note" id="link-note" hidden>Review link not set up yet.</p>
